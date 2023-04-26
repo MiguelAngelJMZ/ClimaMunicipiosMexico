@@ -36,8 +36,7 @@ def main():
 
         except Exception as err:
             logger.error(f"Unhandled error: {str(err)}")
-            logger.info(f"Waiting {format_time_log(time_to_wait)} until next execution...")
-            time.sleep(time_to_wait)
+            raise err
 
 
 if __name__ == '__main__':
