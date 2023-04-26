@@ -17,7 +17,7 @@ def get_args():
     logger.info("Parsing initialization arguments")
     parser = argparse.ArgumentParser()
     parser.add_argument('-debug_log', type=str, default=settings.default_parameters.get('-debug_log'))
-    parser.add_argument('-time_to_wait', type=str, default=86400)
+    parser.add_argument('-time_to_wait', type=str, default=3600)
     args = parser.parse_args()
     return args
 
